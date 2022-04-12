@@ -1,3 +1,49 @@
+<?php
+
+$employed = [
+    "EM001" => [
+        "id" => 3,
+        "firstName" => "Claude",
+        "lastName" => "Basset",
+        "age" => 54,
+        "genre" => "M"
+    ],
+    "EM005" => [
+        "id" => 6,
+        "firstName" => "Polly",
+        "lastName" => "Smith",
+        "age" => 41,
+        "genre" => "F"
+    ],
+    "EM065" => [
+        "id" => 13,
+        "firstName" => "Nabil",
+        "lastName" => "Bensaoud",
+        "age" => 34,
+        "genre" => "M"
+    ],
+];
+
+$employed["EM001"]=[
+    "id" => 3,
+    "firstName" => "Claude",
+    "lastName" => "Basset",
+    "age" => 54,
+    "genre" => "M"
+];
+
+$employed["EM005"] = [
+    "id" => 6,
+    "firstName" => "Polly",
+    "lastName" => "Smith",
+    "age" => 41,
+    "genre" => "F"
+];
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -11,6 +57,12 @@
 <body>
     <div>
         <a href="/">Retour à l'index</a>
+    </div>
+
+    <div>
+        <?php
+            var_dump($employed["EM005"]);
+        ?>
     </div>
 </body>
 
